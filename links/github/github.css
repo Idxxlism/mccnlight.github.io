@@ -1,0 +1,352 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background:#EBECEE;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Font */
+@font-face {
+  font-family: hacker;
+  src: url("font/hacked-kerx-webfont.woff") format("woff");
+}
+
+/* Sfondo */
+.container-sfondo {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sfondo {
+  position: relative;
+  background-image: url("immagini/bg.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
+}
+
+.titolo {
+  display: absolute;
+  text-align: center;
+  vertical-align: top;
+  position:absolute;
+  top: 1%;
+  left: 0%;
+  width: 100%;
+  min-height: 100%;
+  font-family: hacker;
+  font-size: 9vw;
+  line-height: 9vw;
+  color: #72709B;
+}
+
+.project-1 {
+  color: rgb(27, 25, 25);
+  position: absolute;
+  font-family: hacker;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.project-1 .repo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	-moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+}
+
+.project-1 .repo-img:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(1.5deg);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	-moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+}
+
+.project-2 {
+  color: rgb(27, 25, 25);
+  position: absolute;
+  font-family: hacker;
+  top: 50%;
+  right: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.project-2 .nhentai-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	-moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+}
+
+.project-2 .nhentai-img:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-1.5deg);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	-moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+	box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+}
+
+/* Laptops */
+
+@media (max-width: 1100px) {
+  .titolo {
+    display: absolute;
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    font-family: hacker;
+    font-size: 11vw;
+    line-height: 9vw;
+    color: #72709B;
+  }
+  
+  .project-1 {
+    color: rgb(27, 25, 25);
+    position: absolute;
+    font-family: hacker;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .project-1 .repo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+    -moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+    box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+  }
+  
+  .project-2 {
+    color: rgb(27, 25, 25);
+    position: absolute;
+    font-family: hacker;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .project-2 .nhentai-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+    -moz-box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+    box-shadow: 1px 28px 25px -12px rgba(16, 15, 16, 0.479);
+  }
+}
+
+/* iPhones */
+
+@media (max-width: 376px) {
+  /* Titolo */
+  .titolo {
+    display: absolute;
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+    min-height: 15vw;
+    font-family: hacker;
+    font-size: 15vw;
+    line-height: 9vw;
+    color: #72709B;
+  }
+
+  /* iPhone X */
+  @media (max-height: 813px) {
+
+    .project-1 {
+      color: rgb(27, 25, 25);
+      position: absolute;
+      font-family: hacker;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .project-1 .repo-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+    }
+
+    .project-2 {
+      color: rgb(27, 25, 25);
+      position: absolute;
+      font-family: hacker;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .project-2 .nhentai-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+    }
+  }
+
+  /* iPhone 6/7/8 */
+  @media (max-height: 668px) {
+
+    .project-1 {
+      color: rgb(27, 25, 25);
+      position: absolute;
+      font-family: hacker;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .project-1 .repo-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+    }
+
+    .project-2 {
+      color: rgb(27, 25, 25);
+      position: absolute;
+      font-family: hacker;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .project-2 .nhentai-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+    }
+  }
+}
+
+/* iPhone 6/7/8 Plus */
+@media (max-width: 415px) {
+    
+  /* Sfondo */
+  .container-sfondo {
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-1 {
+    color: rgb(27, 25, 25);
+    position: absolute;
+    font-family: hacker;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-1 .repo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+  }
+
+  .project-2 {
+    color: rgb(27, 25, 25);
+    position: absolute;
+    font-family: hacker;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-2 .nhentai-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+  }
+
+}
+
+/* Xiaomi redmi note 7 */
+
+@media (max-width: 361px) {
+  /* Titolo */
+  .titolo {
+    display: absolute;
+    text-align: center;
+    vertical-align: top;
+    position:absolute;
+    top: 4%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    font-family: hacker;
+    font-size: 9vw;
+    line-height: 9vw;
+    color: #72709B;
+  }
+    
+  /* Sfondo */
+  .container-sfondo {
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

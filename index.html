@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#323637" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://kit.fontawesome.com/80158bff5f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <title>Lindow Website</title>
+    <link rel="icon" href="immagini\icon.ico"/>
+</head>
+
+<body>
+    <div class="container-sfondo" id="scene">
+        <div class="sfondo" data-depth="0.08"></div>
+    </div>
+    <div class="titolo">Mccnlight</div>
+    <span id="testo" class="desc"></span>
+    <div class="container-icons">
+        <a href="links/github/index.html" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/lindoww8" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://t.me/lindoww8" target="_blank"><i class="fa fa-telegram"></i></a>
+        <a href="links/youtube/index.html" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+</body>
+
+<script type="text/javascript">
+    // testo da mostrare    
+    var testo = "My Example Website";
+    // output
+    var output = "";
+    // incrementatore
+    var i = 0;
+    // velocità di scrittura
+    var speed = 100;
+    // dichiaro la funzione
+    function scrivi() {
+        // creo l'output
+        output += testo.charAt(i);
+        // incremento
+        i++;
+        // scrittura
+        document.getElementById("testo").innerHTML = output;
+        // se è finito il testo
+        if(i >= testo.length) {
+            // fine
+            clearInterval(s);
+        }
+    }
+    // richiamo la funzione a intervalli
+    s = setInterval("scrivi()",speed);
+
+    // parallax
+    var scene = document.getElementById("scene");
+    var parallaxInstance = new Parallax(scene);
+
+</script>
+
+</html>
